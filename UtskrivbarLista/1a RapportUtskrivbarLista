@@ -1,0 +1,16 @@
+SELECT virtualshelves.shelfname as listname,virtualshelfcontents.biblionumber AS biblionumber,biblioitems.isbn AS isbn,biblio.author,biblio.title,
+biblio.abstract AS abstract,
+biblioitems.pages AS pages,
+biblioitems.publishercode AS publishercode,
+biblio.copyrightdate
+
+
+FROM virtualshelfcontents
+LEFT JOIN biblio ON (biblio.biblionumber = virtualshelfcontents.biblionumber)
+LEFT JOIN biblioitems ON (biblioitems.biblionumber = virtualshelfcontents.biblionumber)
+LEFT JOIN biblio_metadata ON (biblio_metadata.biblionumber = virtualshelfcontents.biblionumber)
+LEFT JOIN virtualshelves ON (virtualshelves.shelfnumber = virtualshelfcontents.shelfnumber)
+
+WHERE virtualshelfcontents.shelfnumber = <<Lista nummer>>
+
+ORDER BY COALESCE(biblio.author  COLLATE utf8mb4_swedish_ci,biblio.title)
