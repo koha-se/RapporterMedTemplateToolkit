@@ -8,7 +8,7 @@ Döp noticestexten till något om slutar med .html
 
 Leta fram en befintlig lista i Koha och ta fram dess nummer
 
-KÖr rapporten
+Kör rapporten
 
 Kör rapporten en gång till, men denna gång väljer du "Kör via nall"
 
