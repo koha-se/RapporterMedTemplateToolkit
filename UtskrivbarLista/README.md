@@ -8,6 +8,6 @@ Leta fram en befintlig lista i Koha och ta fram dess nummer
 
 Kör rapporten
 
-Kör rapporten en gång till, men denna gång väljer du "Kör via nall"
+Kör rapporten en gång till, men denna gång väljer du "Kör via mall"
 
 OBS! Bokinfos bilder får bara användas om man har skrivit avtal med Bokinfo!
