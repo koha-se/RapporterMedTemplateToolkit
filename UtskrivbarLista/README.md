@@ -1,4 +1,4 @@
-Skapa en rapport i Koha
+Skapa en rapport i Koha (en lämplig kod ligger ovan)
 
 Lägg upp en ny Noticetext i Koha av typen "Rapport"
 
